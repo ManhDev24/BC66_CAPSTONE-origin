@@ -12,13 +12,6 @@
     top: 15px;
 }
 
-.header-nav {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-gap: 20px;
-    padding: 40px 0 20px 0;
-    align-items: center;
-}
 
 .w3menu-right-content {
     display: grid;
