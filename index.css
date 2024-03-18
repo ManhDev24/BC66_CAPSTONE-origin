@@ -2,14 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-#trigger-overlay {
-    background: none;
+    font-family:"Quicksand", sans-serif;
 }
 
-.form-control {
-    position: relative;
-}
 
 .search__icon {
     position: absolute;
@@ -58,7 +53,6 @@
 /* Start banner */
 .dinner-banner {
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./img/banner1.jpg);
-
 }
 
 .dinner-banner {
@@ -69,4 +63,32 @@
     height: 60vh;
     position: relative;
     min-height: 700px;
+}
+.banner-row {
+    height: 100%;
+}
+.banner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_info{
+    max-width: 600px;
+}
+.dinner-banner .banner_info h3{
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.dinner-banner .banner_info p{
+    font-size: 18px;
+    line-height: 28px;
+    
+}
+.banner_button{
+    transition: 0.3s;
+}
+.banner_button:hover{
+    color: #ff6600;
 }
