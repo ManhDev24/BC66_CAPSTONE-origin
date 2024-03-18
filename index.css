@@ -95,3 +95,21 @@
 .banner_button:hover{
     color: #ff6600;
 }
+
+/* Start dinner content */
+
+
+.title-subhny {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600 ;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.title-w3l {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
