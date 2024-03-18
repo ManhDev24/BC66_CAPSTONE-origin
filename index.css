@@ -1,0 +1,61 @@
+#trigger-overlay {
+    background: none;
+}
+
+.form-control {
+    position: relative;
+}
+
+.search__icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+
+.w3menu-right-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+}
+
+.search__icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 15px;
+}
+
+.form-control {
+    display: flex;
+    flex: 1;
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    font-weight: 400;
+    border-radius: 6px;
+    position: relative;
+    right: 0;
+    background: red;
+    outline: 0;
+    border: 1px solid white;
+    width: 230px;
+}
+
+.w3_menu {
+    cursor: pointer;
+}
