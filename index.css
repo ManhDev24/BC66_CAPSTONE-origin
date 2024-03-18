@@ -5,6 +5,7 @@
     font-family:"Quicksand", sans-serif;
 }
 
+/* Start Header */
 
 .search__icon {
     position: absolute;
@@ -17,7 +18,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
-
+.logo-brand{
+    font-weight: 700;
+}
 .search {
     position: relative;
 }
