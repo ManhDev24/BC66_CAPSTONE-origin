@@ -209,7 +209,7 @@
 
 /* homepage_cover */
 .homepage_cover {
-    background: url(../img/banner2.jpg);
+    background: url(./img/banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
