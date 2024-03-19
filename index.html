@@ -57,10 +57,11 @@
               <!--/search-right-->
               <form action="" method="GET" class="search position-relative">
                 <input
-                  class="form-control me-2 position-relative"
+                  class="dark me-2 position-relative form-control "
                   type="search"
                   placeholder="Search here"
                   aria-label="Search"
+                  id="navbar-input"
                 />
                 <span class="fa fa-search search__icon"></span>
               </form>
@@ -68,7 +69,7 @@
             </div>
 
             <div class="w3_menu text-center fs-2 text-white">
-              <i class="fa-solid fa-moon"></i>
+              <i id="dark-m" class="fa-solid fa-moon" onclick="darkMode()"></i>
             </div>
 
             <div class="mobile-nav-button text-center">
@@ -110,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="dinner-content py-5 py-sm-5 py-md-5">
+    <section id="dinner-content" class="py-5 py-sm-5 py-md-5 dinner-content">
       <div class="container py-md-5 text-start">
         <div class="row">
           <div class="col-lg-5 content-1-left pe-5">
@@ -144,13 +145,13 @@
       <div class="container-fluid px-lg-0">
         <div class="row align-items-center no-gutters mx-0">
           <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
-            <div class="dinner-block-image">
-              
-            </div>
+            <div class="dinner-block-image"></div>
           </div>
           <div class="col-lg-6 px-lg-4 py-lg-3 py-4 HomePageFWP">
             <div class="agent-block-image-inf p-md-5 p-3">
-              <h6 class="title-subhny two text-white">More than 3000 Restaurants</h6>
+              <h6 class="title-subhny two text-white">
+                More than 3000 Restaurants
+              </h6>
 
               <h3 class="title-w3l two">
                 Book a table easly at the best price
@@ -162,7 +163,7 @@
                 tesque et libero ut justo ultrices in.
               </p>
 
-              <div class="subscribe-cat mt-5 ">
+              <div class="subscribe-cat mt-5">
                 <div class="subscribe-cat-gd">
                   <div class="icon mb-4">
                     <span class="fa fa-thumbs-up"></span>
@@ -212,5 +213,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <!-- js script -->
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -49,7 +49,29 @@
     border: 1px solid white;
     width: 230px;
 }
+.form-control.dark-mode {
+    display: flex;
+    flex: 1;
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    color: #c2d0da;
+    border: none;
+    font-weight: 400;
+    border-radius: 6px;
+    position: relative;
+    right: 0;
+    background: #232220;
+    outline: 0;
+    border: 1px solid #232220;
+}
+ .form-control.dark-mode::placeholder {
+    color: #e3e3e3; /* Màu placeholder trong chế độ tối */
+}
 
+.search__icon.dark-mode {
+    color: #8796a5;
+}
 .w3_menu {
     cursor: pointer;
 }
@@ -112,6 +134,14 @@
     font-weight: 600;
 }
 
+.dinner-content.dark-mode {
+    background: #232220;
+    color: #c2d0da;
+}
+.dark-mode .dinner-content h3 {
+    color: white;
+}
+
 /* Start food desc */
 .food-description {
     background: #ff6600;
@@ -154,7 +184,7 @@
     font-size: 25px;
     line-height: 70px;
 }
-.subscribe-cat{
+.subscribe-cat {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -163,11 +193,11 @@
     background: white;
 }
 .subscribe-cat-gd:hover .icon .fa {
-    color: #cccf14; 
-    transition: color 0.5s; 
+    color: #cccf14;
+    transition: color 0.5s;
 }
 
-.subscribe-cat-gd .subscribe-cat-link{
+.subscribe-cat-gd .subscribe-cat-link {
     text-decoration: none;
     display: block;
     color: #232121;
