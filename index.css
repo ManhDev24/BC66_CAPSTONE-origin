@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:"Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Start Header */
@@ -18,7 +18,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
-.logo-brand{
+.logo-brand {
     font-weight: 700;
 }
 .search {
@@ -75,41 +75,104 @@
     justify-content: center;
     align-items: center;
 }
-.banner_info{
+.banner_info {
     max-width: 600px;
 }
-.dinner-banner .banner_info h3{
+.dinner-banner .banner_info h3 {
     font-size: 56px;
     line-height: 64px;
     text-transform: capitalize;
     font-weight: 600;
 }
-.dinner-banner .banner_info p{
+.dinner-banner .banner_info p {
     font-size: 18px;
     line-height: 28px;
-    
 }
-.banner_button{
+.banner_button {
     transition: 0.3s;
 }
-.banner_button:hover{
+.banner_button:hover {
     color: #ff6600;
 }
 
 /* Start dinner content */
-
 
 .title-subhny {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 1px;
-    color: #ff6600 ;
+    color: #ff6600;
     display: block;
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
 }
 .title-w3l {
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
+}
+
+/* Start food desc */
+.food-description {
+    background: #ff6600;
+}
+.dinner-block-image {
+    background-image: url(./img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+}
+.dinner-block-image::after {
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    z-index: -1;
+}
+.dinner-block-image {
+    position: relative;
+    z-index: 1;
+    min-height: 600px;
+}
+.food-description p {
+    color: #ffdfc9;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background: rgb(130 115 252 / 5%);
+    line-height: 70px;
+    border-radius: 6px;
+    transition: 0.5s ease-in-out;
+}
+.icon span.fa {
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+}
+.subscribe-cat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.subscribe-cat-gd .icon {
+    background: white;
+}
+.subscribe-cat-gd:hover .icon .fa {
+    color: #cccf14; 
+    transition: color 0.5s; 
+}
+
+.subscribe-cat-gd .subscribe-cat-link{
+    text-decoration: none;
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
