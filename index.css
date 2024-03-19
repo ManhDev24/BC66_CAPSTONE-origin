@@ -206,3 +206,112 @@
     margin-bottom: 15px;
     font-size: 20px;
 }
+
+/* homepage_cover */
+.homepage_cover {
+    background: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+.homepage_cover:before {
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0px;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.homepage_cover_content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.homepage_cover_content h3 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 800px;
+}
+
+.homepage_cover .homepage_cover_re {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 7px;
+    color: white;
+    background-color: none;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid white;
+}
+
+.homepage_cover .homepage_cover_re:hover {
+    background-color: white;
+    color: #ff6600;
+}
+
+.homepage_cover .homepage_cover_con {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #ff6600;
+}
+
+.homepage_cover .homepage_cover_con:hover {
+    opacity: 0.7;
+    background-color: #ff6600;
+}
+
+/* Number */
+
+.number {
+    position: relative;
+    margin-top: -80px;
+    z-index: 2;
+}
+
+.number .number_item i {
+    color: white;
+    background-color: #ff6600;
+    font-size: 26px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    line-height: 68px;
+}
+
+.number .counter-item {
+    background-color: white;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    padding: 40px 20px;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.number .number_list .counter-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.number .counter-item h3 {
+    font-size: 42px;
+    color: #232121;
+}
