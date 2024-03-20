@@ -403,3 +403,29 @@
     font-size: 42px;
     color: #232121;
 }
+
+/* Dinner-blog */
+
+.dinner-blog .title1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.dinner-blog .title2 {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.dinner-blog .blog_drink a {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ff6600;
+    transition: all 0.5s;
+}
+
+.dinner-blog .blog_drink a:hover {
+    color: #5431ac;
+
+}
