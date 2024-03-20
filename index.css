@@ -218,14 +218,14 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 90%;
+    width: 100%;
     border-radius: 6px;
 }
 .dinner-category .gal-slide-info {
     position: absolute;
     left: auto;
     bottom: 0;
-    width: 90%;
+    width: 95%;
     color: white;
     transform: translate3d(0, 10%, 0);
 }
@@ -259,8 +259,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20px;
-    width: 90%;
+    left: 24px;
+    width: 88.5%;
     height: 40%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
     transition-duration: 300ms;
@@ -268,7 +268,10 @@
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     border-radius: 6px;
 }
-
+.dinner-category.dark{
+    background: #282828;
+    color: #eee;
+}
 /* homepage-services */
 .homepage-services .container .box {
     padding: 40px 40px;

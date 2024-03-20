@@ -21,6 +21,9 @@ function darkMode() {
     darkMoonIcon.classList.remove("fa-moon");
     darkMoonIcon.classList.add("fa-sun");
   }
+
+  const dinnerCategory = document.getElementById("dinner-category");
+  dinnerCategory.classList.toggle('dark')
 }
 
 
