@@ -65,7 +65,7 @@
     outline: 0;
     border: 1px solid #232220;
 }
- .form-control.dark-mode::placeholder {
+.form-control.dark-mode::placeholder {
     color: #e3e3e3; /* Màu placeholder trong chế độ tối */
 }
 
@@ -207,6 +207,42 @@
     font-size: 20px;
 }
 
+/* Start dinner category */
+
+.dinner-category .gal-slide-img {
+    position: relative;
+}
+.dinner-category .gal-slide-img img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 6px;
+}
+.dinner-category .gal-slide-info {
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    width: 95%;
+    color: white;
+    transform: translate3d(0, 10%, 0);
+}
+.dinner-category .gal-slide-grid .gal-slide-info {
+    opacity: 1;
+    transition: all 0.4s;
+}
+.dinner-category img:hover{
+    opacity: 0.85;
+    transition: all 0.4s;
+}
+.dinner-category .gal-slide-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+}
 /* homepage_cover */
 .homepage_cover {
     background: url(./img/banner2.jpg);
@@ -215,7 +251,6 @@
     background-size: cover;
     position: relative;
     z-index: 1;
-
 }
 
 .homepage_cover:before {
