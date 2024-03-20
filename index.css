@@ -207,6 +207,58 @@
     font-size: 20px;
 }
 
+/* homepage_services */
+.homepage_services .container .box {
+    padding: 40px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    background-color: white;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.homepage_services .container .box:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.homepage_services .container .box-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}
+
+.homepage_services .container .box-grid .icon {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background: rgba(130, 115, 252, .05);
+    line-height: 70px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.homepage_services .container .box:hover .icon {
+    background-color: #ff6600;
+    transition: 0.3s ease-in-out;
+}
+
+.homepage_services .container .box-grid .icon span.fa {
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.homepage_services .container .box:hover .icon span.fa {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.homepage_services .row .box p {
+    font-size: 18px !important;
+}
+
+
 /* homepage_cover */
 .homepage_cover {
     background: url(../img/banner2.jpg);
