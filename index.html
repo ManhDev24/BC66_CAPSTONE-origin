@@ -37,7 +37,10 @@
       rel="stylesheet"
     />
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="./Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
+    <link
+      rel="stylesheet"
+      href="./Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css"
+    />
 
     <!-- my css-->
     <link rel="stylesheet" href="./index.css" />
@@ -58,12 +61,18 @@
             <!--/search-right-->
             <div class="search-bar HeaderSearch">
               <!--/search-right-->
-              <form action="" method="GET" class="search position-relative">
+              <form
+                action="https://wp.w3layouts.com/diner/"
+                method="GET"
+                class="search position-relative"
+              >
                 <input
-                  class="dark me-2 position-relative form-control"
                   type="search"
-                  placeholder="Search here"
-                  aria-label="Search"
+                  class="search__input"
+                  name="s"
+                  placeholder="Search here.."
+                  onload="equalWidth()"
+                  required=""
                   id="navbar-input"
                 />
                 <span class="fa fa-search search__icon"></span>
@@ -80,12 +89,71 @@
                 class="navbar btn fs-3 border-0 text-white"
                 type="button"
                 data-bs-toggle="collapse"
+                id="nav-button"
               >
                 <span class="navbar-icon">
                   <i class="fa fa-bars"></i>
                 </span>
               </button>
             </div>
+          </div>
+          <div class="overlay overlay-scale">
+            <button type="button" class="overlay-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+
+            <nav class="menu-header-menu-container">
+              <ul id="primary-menu" class="">
+                <li
+                  id="menu-item-21"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-21"
+                >
+                  <a href="#" aria-current="page">Home</a>
+                </li>
+                <li
+                  id="menu-item-27"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"
+                >
+                  <a href="#">About</a>
+                </li>
+                <li
+                  id="menu-item-26"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"
+                >
+                  <a href="#">Services</a>
+                </li>
+                <li
+                  id="menu-item-20"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"
+                >
+                  <a href="#">Blog Posts</a>
+                </li>
+                <li
+                  id="menu-item-22"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"
+                >
+                  <a href="#">404 page</a>
+                </li>
+                <li
+                  id="menu-item-24"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"
+                >
+                  <a href="#">Elements</a>
+                </li>
+                <li
+                  id="menu-item-23"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"
+                >
+                  <a href="#">Contact</a>
+                </li>
+                <li
+                  id="menu-item-25"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"
+                >
+                  <a href="#">Landing page</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -207,7 +275,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g1.jpg" class="img img-fluid" alt=""
               /></a>
@@ -225,7 +293,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g2.jpg" class="img img-fluid" alt=""
               /></a>
@@ -243,7 +311,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g3.jpg" class="img img-fluid" alt=""
               /></a>
@@ -261,7 +329,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g4.jpg" class="img img-fluid" alt=""
               /></a>
@@ -279,7 +347,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g5.jpg" class="img img-fluid" alt=""
               /></a>
@@ -297,7 +365,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img ">
+            <div class="gal-slide-img">
               <a href="#url"
                 ><img src="./img/g6.jpg" class="img img-fluid" alt=""
               /></a>
@@ -534,110 +602,119 @@
         <div class="container py-lg-5 HoemPageVideo">
           <div class="history-info position-relative">
             <style>
-              .homepage-video .history-info{
+              .homepage-video .history-info {
                 background: url(./img/banner3.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
               }
             </style>
-            <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+            <a
+              href="#small-dialog"
+              class="popup-with-zoom-anim play-view text-center pl-3"
+            >
               <span class="video-play-icon">
                 <span class="fa fa-play"></span>
               </span>
             </a>
           </div>
           <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            <iframe
+              src="https://player.vimeo.com/video/305185528"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen=""
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
     <section class="dinner-agency"></section>
 
-
     <!-- Dinner-blog -->
-    <section class="dinner-blog py-5" style="background-color: #f7f7f7;">
-      <div class="container py-2 ps-5 pe-5">
+    <section>
+      <div class="dinner-blog py-5" style="background-color: #f7f7f7">
+        <div class="container py-2 ps-5 pe-5">
           <div class="blog_title text-center">
-              <h4 class="title1">Latest Posts</h4>
-              <h2 class="title2">Blog Posts</h2>
+            <h4 class="title1">Latest Posts</h4>
+            <h2 class="title2">Blog Posts</h2>
           </div>
           <div class="row">
-              <div class="col-lg-4 col-md-6 mt-5 ">
-                  <div class="blog_img position-relative w-100 d-flex ">
-                      <img class="w-100 rounded-3 " src="./img/g1.jpg" alt="">
-                      <div class="blog_drink d-inline pe-3 ps-2 ">
-                          <a href="#" class="text-decoration-none">Drinks</a>
-                      </div>
-                  </div>
-                  <div class="blog_body">
-                      <h4 class="pt-4 fw-semibold">Hello World!</h4>
-                      <div class="blog_contact d-flex justify-content-between">
-                          <div class="contact_list d-flex  ">
-                              <div>
-                                  <img class="rounded-5" src="./img/W3Layouts.jpg" alt="">
-                              </div>
-                              <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
-                          </div>
-                          <div class="contact_read d-flex pt-2">
-                              <p class="fs-6 fw-bold">Read More</p>
-                              <i class=" fs-6 pt-1 fw-bold ps-2  fa fa-angle-right"></i>
-                          </div>
-                      </div>
-                  </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog_img position-relative w-100 d-flex">
+                <img class="w-100 rounded-3" src="./img/g1.jpg" alt="" />
+                <div class="blog_drink d-inline pe-3 ps-2">
+                  <a href="#" class="text-decoration-none">Drinks</a>
+                </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-5 ">
-                  <div class="blog_img position-relative w-100 d-flex ">
-                      <img class="w-100 rounded-3 " src="./img/g7.jpg" alt="">
-                      <div class="blog_drink d-inline pe-3 ps-2 ">
-                          <a href="#" class="text-decoration-none">Drinks</a>
-                      </div>
+              <div class="blog_body">
+                <h4 class="pt-4 fw-semibold">Hello World!</h4>
+                <div class="blog_contact d-flex justify-content-between">
+                  <div class="contact_list d-flex">
+                    <div>
+                      <img class="rounded-5" src="./img/W3Layouts.jpg" alt="" />
+                    </div>
+                    <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
                   </div>
-                  <div class="blog_body">
-                      <h4 class="pt-4 fw-semibold ">The Best Cookie Recipes To Bake This Weekend</h4>
-                      <div class="blog_contact d-flex justify-content-between">
-                          <div class="contact_list d-flex  ">
-                              <div>
-                                  <img class="rounded-5" src="./img/W3Layouts.jpg" alt="">
-                              </div>
-                              <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
-                          </div>
-                          <div class="contact_read d-flex pt-2">
-                              <p class="fs-6 fw-bold">Read More</p>
-                              <i class=" fs-6 pt-1 fw-bold ps-2  fa fa-angle-right"></i>
-                          </div>
-                      </div>
+                  <div class="contact_read d-flex pt-2">
+                    <p class="fs-6 fw-bold">Read More</p>
+                    <i class="fs-6 pt-1 fw-bold ps-2 fa fa-angle-right"></i>
                   </div>
+                </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-5 ">
-                  <div class="blog_img position-relative w-100 d-flex">
-                      <img class="w-100 rounded-3 " src="./img/g5.jpg" alt="">
-                      <div class="blog_drink d-inline pe-3 ps-2 ">
-                          <a href="#" class="text-decoration-none">Food</a>
-                      </div>
-                  </div>
-                  <div class="blog_body">
-                      <h4 class="pt-4 fw-semibold ">The Best Cookie Recipes To Bake This Weekend</h4>
-                      <div class="blog_contact d-flex justify-content-between">
-                          <div class="contact_list d-flex  ">
-                              <div>
-                                  <img class="rounded-5" src="./img/W3Layouts.jpg" alt="">
-                              </div>
-                              <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
-                          </div>
-                          <div class="contact_read d-flex pt-2">
-                              <p class="fs-6 fw-bold">Read More</p>
-                              <i class=" fs-6 pt-1 fw-bold ps-2  fa fa-angle-right"></i>
-                          </div>
-                      </div>
-                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog_img position-relative w-100 d-flex">
+                <img class="w-100 rounded-3" src="./img/g7.jpg" alt="" />
+                <div class="blog_drink d-inline pe-3 ps-2">
+                  <a href="#" class="text-decoration-none">Drinks</a>
+                </div>
               </div>
+              <div class="blog_body">
+                <h4 class="pt-4 fw-semibold">
+                  The Best Cookie Recipes To Bake This Weekend
+                </h4>
+                <div class="blog_contact d-flex justify-content-between">
+                  <div class="contact_list d-flex">
+                    <div>
+                      <img class="rounded-5" src="./img/W3Layouts.jpg" alt="" />
+                    </div>
+                    <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
+                  </div>
+                  <div class="contact_read d-flex pt-2">
+                    <p class="fs-6 fw-bold">Read More</p>
+                    <i class="fs-6 pt-1 fw-bold ps-2 fa fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="blog_img position-relative w-100 d-flex">
+                <img class="w-100 rounded-3" src="./img/g5.jpg" alt="" />
+                <div class="blog_drink d-inline pe-3 ps-2">
+                  <a href="#" class="text-decoration-none">Food</a>
+                </div>
+              </div>
+              <div class="blog_body">
+                <h4 class="pt-4 fw-semibold">
+                  The Best Cookie Recipes To Bake This Weekend
+                </h4>
+                <div class="blog_contact d-flex justify-content-between">
+                  <div class="contact_list d-flex">
+                    <div>
+                      <img class="rounded-5" src="./img/W3Layouts.jpg" alt="" />
+                    </div>
+                    <p class="ps-2 pt-2 fw-bold fs-6">W3Layouts</p>
+                  </div>
+                  <div class="contact_read d-flex pt-2">
+                    <p class="fs-6 fw-bold">Read More</p>
+                    <i class="fs-6 pt-1 fw-bold ps-2 fa fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
+        </div>
       </div>
-
-      </div>
-
     </section>
 
     <footer>
@@ -678,29 +755,28 @@
     </script>
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- Magnific Popup core JS file -->
+    <!-- Magnific Popup core JS file -->
     <script src="./Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
     <!-- My js -->
     <script src="./index.js"></script>
     <script>
       $(document).ready(function () {
-  $(".popup-with-zoom-anim").magnificPopup({
-    type: "inline",
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
 
-    fixedContentPos: false,
-    fixedBgPos: true,
+          fixedContentPos: false,
+          fixedBgPos: true,
 
-    overflowY: "auto",
+          overflowY: "auto",
 
-    closeBtnInside: true,
-    preloader: false,
+          closeBtnInside: true,
+          preloader: false,
 
-    midClick: true,
-    removalDelay: 300,
-    mainClass: "my-mfp-zoom-in"
-  });
-  });
-
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
     </script>
   </body>
 </html>
