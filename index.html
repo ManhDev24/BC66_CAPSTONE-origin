@@ -36,6 +36,9 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
+
     <!-- my css-->
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -200,7 +203,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g1.jpg" class="img img-fluid" alt=""
               /></a>
@@ -218,7 +221,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g2.jpg" class="img img-fluid" alt=""
               /></a>
@@ -236,7 +239,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g3.jpg" class="img img-fluid" alt=""
               /></a>
@@ -254,7 +257,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g4.jpg" class="img img-fluid" alt=""
               /></a>
@@ -272,7 +275,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g5.jpg" class="img img-fluid" alt=""
               /></a>
@@ -290,7 +293,7 @@
           <div
             class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2"
           >
-            <div class="gal-slide-img px-4">
+            <div class="gal-slide-img ">
               <a href="#url"
                 ><img src="./img/g6.jpg" class="img img-fluid" alt=""
               /></a>
@@ -524,8 +527,29 @@
         </div>
       </div>
     </section>
-    <section class="homepage-video"></section>
-    <section class="dinner-blog"></section>
+    <section class="homepage-video">
+      <div class="new-block py-5">
+        <div class="container py-lg-5 HoemPageVideo">
+          <div class="history-info position-relative">
+            <style>
+              .homepage-video .history-info{
+                background: url(./img/banner3.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            </style>
+            <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+              <span class="video-play-icon">
+                <span class="fa fa-play"></span>
+              </span>
+            </a>
+          </div>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="dinner-agency"></section>
 
 
@@ -650,6 +674,31 @@
     <script>
       $(".counter").countUp();
     </script>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Magnific Popup core JS file -->
+    <script src="./Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <!-- My js -->
     <script src="./index.js"></script>
+    <script>
+      $(document).ready(function () {
+  $(".popup-with-zoom-anim").magnificPopup({
+    type: "inline",
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: "auto",
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+  });
+
+    </script>
   </body>
 </html>
