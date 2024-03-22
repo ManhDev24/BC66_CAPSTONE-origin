@@ -24,6 +24,8 @@ function darkMode() {
 
   const dinnerCategory = document.getElementById("dinner-category");
   dinnerCategory.classList.toggle('dark')
+  const homepageVideo = document.getElementById('new-block');
+  homepageVideo.classList.toggle('dark')
 }
 
 

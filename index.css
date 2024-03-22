@@ -494,8 +494,8 @@
     border: transparent;
     background: #fff;
 }
-.mfp-hide {
-    display: none !important;
+.new-block.dark{
+    background: #232220;
 }
 
 /* Styles for dialog window */
@@ -513,6 +513,9 @@ div#small-dialog iframe {
 }
 ifram {
     max-width: 100%;
+}
+.mfp-hide {
+    display: none !important;
 }
 .mfp-close {
     line-height: 40px;
