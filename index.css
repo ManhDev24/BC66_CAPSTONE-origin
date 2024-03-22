@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    grid-gap: 20px;
 }
 .logo-brand {
     font-weight: 700;
@@ -32,38 +33,37 @@
     font-size: 15px;
 }
 
-.form-control {
+.search-bar .search .search__input {
     display: flex;
     flex: 1;
     padding: 10px 50px 10px 20px;
     height: 45px;
     font-size: 16px;
-    color: white;
+    color: rgb(22 28 45 / 70%);
     border: none;
     font-weight: 400;
     border-radius: 6px;
     position: relative;
     right: 0;
-    background: white;
+    background: #fff;
     outline: 0;
-    border: 1px solid white;
-    width: 230px;
+    border: 1px solid #fff;
 }
-.form-control.dark-mode {
+.search__input.dark-mode {
     display: flex;
     flex: 1;
     padding: 10px 50px 10px 20px;
     height: 45px;
     font-size: 16px;
-    color: #c2d0da;
+    color: #c2d0da !important;
     border: none;
     font-weight: 400;
     border-radius: 6px;
     position: relative;
     right: 0;
-    background: #232220;
+    background: #232220 !important;
     outline: 0;
-    border: 1px solid #232220;
+    border: 1px solid #232220 !important;
 }
 .form-control.dark-mode::placeholder {
     color: #e3e3e3; /* Màu placeholder trong chế độ tối */
@@ -74,6 +74,21 @@
 }
 .w3_menu {
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .search-bar {
+        display: none;
+    }
+}
+@media (max-width: 995px) {
+    .w3menu-right-content {
+        grid-template-columns: 0fr 0.2fr 4.2fr;
+        align-items: center;
+        grid-gap: 10px;
+        align-content: stretch;
+        justify-content: end;
+        justify-items: start;
+    }
 }
 /* Start banner */
 .dinner-banner {
@@ -117,6 +132,142 @@
     color: #ff6600;
 }
 
+@media (max-width: 1190px) {
+    .dinner-banner .banner_info h3 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+@media (max-width: 992px) {
+    .dinner-banner .banner_info h3 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+@media (max-width: 800px) {
+    .dinner-banner .banner_info h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .dinner-banner {
+        min-height: 600px;
+        height: 600px;
+    }
+}
+@media (max-width: 480px) {
+    .dinner-banner .banner_info h3 {
+        font-size: 16px;
+        line-height: 5px;
+    }
+    .dinner-banner .banner_info p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .dinner-banner .banner_info {
+        max-width: 500px;
+    }
+    .dinner-banner {
+        min-height: 450px;
+        height: 450px;
+    }
+}
+/* Start overlay  */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    background: rgb(6 3 0 / 77%);
+}
+/* Overlay closing cross */
+.overlay .overlay-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 6px;
+}
+
+button#trigger-overlay {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: #fbfdfb;
+    font-size: 1.95em;
+    padding: 0 8px;
+}
+
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.overlay ul li {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    line-height: 3em;
+}
+.overlay ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #ff6600;
+}
+/* Effects */
+.overlay-scale {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition:
+        -webkit-transform 0.2s,
+        opacity 0.2s,
+        visibility 0s 0.2s;
+    transition:
+        transform 0.2s,
+        opacity 0.2s,
+        visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition:
+        -webkit-transform 0.4s,
+        opacity 0.4s;
+    transition:
+        transform 0.4s,
+        opacity 0.4s;
+}
 /* Start dinner content */
 
 .title-subhny {
@@ -141,7 +292,12 @@
 .dark-mode .dinner-content h3 {
     color: white;
 }
-
+@media (max-width: 989px) {
+    .content-1-right {
+        padding-left: 10px !important;
+        padding-right: 0 !important;
+    }
+}
 /* Start food desc */
 .food-description {
     background: #ff6600;
@@ -150,7 +306,8 @@
     background-image: url(./img/banner3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
 }
 .dinner-block-image::after {
     content: "";
@@ -207,6 +364,21 @@
     font-size: 20px;
 }
 
+@media all and (max-width: 992px) {
+    .subscribe-cat {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        grid-gap: 20px 10px;
+    }
+
+    .subscribe-cat .subscribe-cat-link {
+        font-size: 18px;
+    }
+    .dinner-block-image {
+        min-height: 200px;
+    }
+}
 /* Start dinner category */
 .dinner-category {
     background: #f7f7f7;
@@ -248,6 +420,10 @@
     bottom: 0;
     width: 95%;
     color: white;
+    transform: translate3d(0, 10%, 0);
+}
+.dinner-category .gal-slide-info {
+    transform: translate3d(0, -5%, 0);
     transform: translate3d(0, 10%, 0);
 }
 
@@ -494,7 +670,7 @@
     border: transparent;
     background: #fff;
 }
-.new-block.dark{
+.new-block.dark {
     background: #232220;
 }
 
@@ -533,8 +709,8 @@ ifram {
 }
 .mfp-close-btn-in .mfp-close {
     color: #fff;
-  }
-  
+}
+
 button.mfp-close,
 button.mfp-arrow {
     overflow: visible;

@@ -23,9 +23,18 @@ function darkMode() {
   }
 
   const dinnerCategory = document.getElementById("dinner-category");
-  dinnerCategory.classList.toggle('dark')
-  const homepageVideo = document.getElementById('new-block');
-  homepageVideo.classList.toggle('dark')
+  dinnerCategory.classList.toggle("dark");
+  const homepageVideo = document.getElementById("new-block");
+  homepageVideo.classList.toggle("dark");
+}
+const navbar = document.querySelector(".mobile-nav-button");
+navbar.onclick = function () {
+  const overlay = document.querySelector(".overlay-scale");
+  overlay.classList.toggle("open");
 }
 
-
+const closeNavBar = document.querySelector(".overlay-close");
+closeNavBar.onclick = function () {
+  const overlay = document.querySelector(".overlay-scale");
+  overlay.classList.remove("open");
+}
