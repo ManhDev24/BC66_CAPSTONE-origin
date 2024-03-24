@@ -764,3 +764,95 @@ button.mfp-arrow {
 .dinner-blog .blog_drink a:hover {
     color: #5431ac;
 }
+
+/* Footer */
+.footer p {
+    color: #a5a2a1;
+    font-size: 18px;
+}
+
+.l_o {
+    width: 90%;
+}
+
+.footer_i i {
+    color: #ff6600;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.footer .footer_ip {
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.footer .footer_ip:hover {
+    border-color: #ff6600;
+}
+
+.footer .footer_btn {
+    background-color: #ff6600;
+    padding: 14px 0px;
+    font-size: 18px;
+    width: 100%;
+    opacity: 1;
+    transition: 0.7s;
+    border-radius: 7px;
+}
+
+.footer .footer_btn:hover {
+    opacity: 0.8;
+}
+
+.footer .ft-sp {
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+.footer .ft-sp:hover {
+    color: white;
+}
+
+.footer .footer_dn:hover {
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.footer .footer_dr:hover {
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.footer .footer_fo:hover {
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.footer .footer_ma:hover {
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.footer_i i:hover {
+    background: #ff6600;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* copyright */
+
+.copyright {
+    padding: 1.2em 0;
+    background: black;
+    border-top: 1px solid rgb(255 255 255 / 5%);
+}
