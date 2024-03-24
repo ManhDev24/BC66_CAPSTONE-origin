@@ -156,8 +156,8 @@
 }
 @media (max-width: 480px) {
     .dinner-banner .banner_info h3 {
-        font-size: 16px;
-        line-height: 5px;
+        font-size: 13px;
+        line-height: 2px;
     }
     .dinner-banner .banner_info p {
         font-size: 15px;
