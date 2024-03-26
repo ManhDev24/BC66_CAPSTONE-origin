@@ -383,7 +383,10 @@ button#trigger-overlay {
 .dinner-category {
     background: #f7f7f7;
 }
-
+.res-categories-grids{
+    padding-left: 32px;
+    padding-right: 32px;
+}
 .dinner-category .gal-slide-img img {
     display: block;
     margin: 0 auto;
@@ -395,7 +398,7 @@ button#trigger-overlay {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
 }
 
 .dinner-category .gal-slide-img {
