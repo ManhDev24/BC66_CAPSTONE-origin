@@ -502,9 +502,23 @@ button#trigger-overlay {
     transition: 0.3s ease-in-out;
 }
 
+.homepage-services .container .box-grid .info a{
+    color: black;
+}
+
 .homepage-services .row .box p {
     font-size: 18px !important;
 }
+.homepage-services.dark-mode{
+    background: #232220;
+    color: #c2d0da;
+}
+.homepage-services .row .box.dark-mode{
+    background: #232220;
+    color: #c2d0da;
+}
+
+
 
 /* homepage_cover */
 .homepage_cover {
@@ -765,6 +779,90 @@ button.mfp-arrow {
     color: #5431ac;
 }
 
+
+/* Dinner-agency */
+
+.Dinner-agency p{
+    font-size: 18px;
+}
+.Dinner-agency .redd{
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 20px;
+}
+.Dinner-agency .two{
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.Dinner-agency .content_img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.Dinner-agency .slick_content span{
+    color: #ff6600;
+}
+.Dinner-agency .slick_content p{
+    font-size: 18px;
+    line-height: 28px;
+    width: 56%;
+}
+.Dinner-agency .slick_content .list_h{
+    font-weight: 600;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -50px;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li button:hover:before , .slick-dots li.slick-active button:hover::before {
+    color: #ff6600;
+}
+.slick-dots li.slick-active button::before {
+    z-index: 1;
+    opacity: 1;
+    color: #ff6600;
+}
+@media screen and (max-width: 991.98px){
+    .Dinner-agency .slick_content p{
+        
+        width: 100%;
+    }
+}
+@media screen and (max-width: 599px){
+    .Dinner-agency .slick_content p{
+        
+        font-size: 16px;
+    }
+}
+
 /* Footer */
 .footer p {
     color: #a5a2a1;
@@ -855,4 +953,34 @@ button.mfp-arrow {
     padding: 1.2em 0;
     background: black;
     border-top: 1px solid rgb(255 255 255 / 5%);
+}
+
+/* back-to-top */
+.back_to_top {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #ff6600;
+    line-height: 36px;
+    border-radius: 35px;
+    transition: 0.3s ease-out;
+    opacity: 1;
+    /* visibility: hidden; */
+}
+
+.back_to_top .fa {
+    padding: 15px;
+}
+
+/* style of button back to top */
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }

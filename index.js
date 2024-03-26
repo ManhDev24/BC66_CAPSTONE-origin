@@ -8,6 +8,12 @@ function darkMode() {
   const dinnerContent = document.getElementById("dinner-content");
   dinnerContent.classList.toggle("dark-mode");
 
+  const homepageServices = document.getElementById("homepage-services");
+  homepageServices.classList.toggle("dark-mode");
+
+  const box = dinnerContent.querySelector("box");
+  box.classList.toggle("dark-mode");
+
   const heading = dinnerContent.querySelector("h3");
   heading.classList.toggle("text-white");
 
