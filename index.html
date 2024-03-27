@@ -908,7 +908,7 @@
     </section>
 
     <!-- Back-to-top -->
-    <a href="#" class="cd-top text-replace js-cd-top back_to_top"><i class="fa fa-solid fa-chevron-up"></i></a>
+    <a href="#" id="backtop" class="cd-top text-replace js-cd-top back_to_top"><i class="fa fa-solid fa-chevron-up"></i></a>
 
 
 
@@ -991,5 +991,19 @@
     <!-- back to top js -->
     <script src="./js/back-to-top-master/back-to-top-master/assets/js/util.js"></script>
     <script src="./js/back-to-top-master/back-to-top-master/assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop()){
+            $('#backtop').fadeIn();
+          }else{
+            $('#backtop').fadeOut();
+          }
+        })
+        $("#backtop").click(function(){
+          $('html, body').animate({scrollTop: 0}, 500);
+        })
+      })
+    </script>
   </body>
 </html>
