@@ -269,7 +269,9 @@ button#trigger-overlay {
         opacity 0.4s;
 }
 /* Start dinner content */
-
+.dinner-content{
+    z-index: 1;
+}
 .title-subhny {
     font-size: 20px;
     font-weight: 400;
@@ -975,6 +977,7 @@ button.mfp-arrow {
     border-radius: 35px;
     transition: 0.3s ease-out;
     opacity: 1;
+    z-index: 0;
     /* visibility: hidden; */
 }
 
